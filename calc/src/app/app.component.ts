@@ -106,7 +106,6 @@ export class AppComponent {
   }
  // To clear all
   deleteAll() {
-    this.result = '';
     this.input = '';
   }
 }
