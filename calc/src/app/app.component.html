@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="container">
+        <h1 class="text-center">Calculator</h1>
+        <div class=" row justify-content-center">
+            <div class="user" type="">{{input}}</div>
+        </div>
+        
+        <!-- <div class=" row justify-content-center">
+            <div class="user " type="text">{{result}}</div>
+        </div> -->
+
+        <div class=" row justify-content-center">
+            <button class="btn btn-danger" id="AC" type="button" (click)="deleteAll()">AC</button>
+            <button class="btn btn-danger" id="Del" type="button" (click)="delete()">Del</button>
+            <button class="btn btn-secondary" type="button" (click)="pressOperator('/')">/</button>
+        </div>
+    
+        <div class="row justify-content-center">
+            <button class="btn num" type="button" (click)="pressNum('7')">7</button>
+            <button class="btn num" type="button" (click)="pressNum('8')">8</button>
+            <button class="btn num" type="button" (click)="pressNum('9')">9</button>
+            <button class="btn btn-secondary" type="button" (click)="pressOperator('*')">*</button>
+        </div>
+
+        <div class=" row justify-content-center" >
+            <button  class="btn num" type="button" (click)="pressNum('4')">4</button>
+            <button  class="btn num" type="button" (click)="pressNum('5')">5</button>
+            <button  class="btn num" type="button" (click)="pressNum('6')">6</button>
+            <button  class="btn btn-secondary" type="button" (click)="pressOperator('-')">-</button>
+        </div>
+
+        <div class=" row justify-content-center">
+            <button  class="btn num" type="button" (click)="pressNum('1')">1</button>
+            <button  class="btn num" type="button" (click)="pressNum('2')">2</button>
+            <button  class="btn num" type="button" (click)="pressNum('3')">3</button>
+            <button  class="btn btn-secondary" type="button" (click)="pressOperator('+')">+</button>
+        </div>
+        
+        <div class=" row justify-content-center">
+            <button  class="btn num" type="button" (click)="pressNum('.')">.</button>
+            <button  class="btn num" type="button" (click)="pressNum('0')">0</button>
+            <button  class="btn btn-success" id="equals" type="button" (click)="getAnswer()">=</button>
+
+        </div>
+    </div>
+</div>
